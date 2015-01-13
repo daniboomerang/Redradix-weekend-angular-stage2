@@ -1,6 +1,8 @@
 # Redradix-weekend-with-Angular-Stage2-Final
-Redradix Weekend con Angularjs. Saturday 17-January-2015. GNAs Container
 ==================================================================================
+
+Redradix Weekend con Angularjs. Saturday 17-January-2015. GNAs Container
+
 
 Find weekend info at Meetup:
 http://www.meetup.com/Redradix-Weekends/events/219715822/
