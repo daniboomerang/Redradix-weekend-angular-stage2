@@ -31,9 +31,9 @@ gnaApiDirectives.directive('gnaApi', function($interval, gnaApiService) {
   };
 });
 
-gnaApiDirectives.directive('gnaApiWrapper', function() {
+gnaApiDirectives.directive('externalApi', function() {
   return {
     restrict: 'E',
-    templateUrl: 'modules/api/views/gnaApiWrapper.html'
+    templateUrl: 'modules/api/views/external-api.html'
   };
 });

@@ -2,6 +2,7 @@
 /**************  NAVBAR *************/
 /************************************/
 
+.navbar { border: none !important; }
 .navbar-custom { border-radius: 0px; margin-bottom: 0; font-size: 4px; background-color: rgba(142, 0, 0, 1); border-bottom: solid white 1px !important; }
 .navbar-custom .navbar-nav>li>a:hover {
 	color: white !important;

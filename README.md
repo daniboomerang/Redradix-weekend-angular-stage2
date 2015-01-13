@@ -3,7 +3,6 @@
 
 Redradix Weekend con Angularjs. Saturday 17-January-2015. GNAs Container
 
-
 Find weekend info at Meetup:
 http://www.meetup.com/Redradix-Weekends/events/219715822/
 
@@ -14,4 +13,7 @@ http://www.meetup.com/Redradix-Weekends/events/219715822/
 
 # Description:
 
- * The GNAs container is the final exercise, that contains all the random number genreators developed in the previous exersices in the same Angular APP.
+ * This project (GNAs Container) is a Angular app that contains all the random number generators developed in the Stage 1.
+ * The project is aimed to show how to organize big projects in Angular (though this is not a big one).
+ * The idea is to show the 5 angular apps of the Stage 1 as a independent modules of the GNAs Container.
+ * For that there is the need to learn some about ngRoute and $location. 
