@@ -7,9 +7,9 @@ angular.module('gnasApp', [
 	// GNAs Container
 	'gnasDirectives',
 	// GNAs Modules
-	'gnaProgrammed', 	// Programmed Module
+	'gnaUIlogic', 		// UIlogic Module
 	'gnaAsDirective',	// As Directive Module
-	'gnaWithService',		// Service Module
+	'gnaWithService',	// Service Module
 	'gnaApi'         	// Api Module
 ])
 .config(function($locationProvider, $routeProvider) {
@@ -19,7 +19,7 @@ angular.module('gnasApp', [
             .when('/manual', { templateUrl : 'modules/manual/views/manual.html'})
 
             // route for Module GNA Programmed
-            .when('/programmed', { templateUrl : 'modules/programmed/views/programmed.html'})
+            .when('/uilogic', { templateUrl : 'modules/uilogic/views/uilogic.html'})
 
             // route for Module GNA Directive
             .when('/directive', { templateUrl : 'modules/directive/views/directive.html'})

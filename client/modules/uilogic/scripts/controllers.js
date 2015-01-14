@@ -1,6 +1,6 @@
-var gnaProgrammedControllers = angular.module('gnaProgrammedControllers', []);	
+var gnaUIlogicControllers = angular.module('gnaUIlogicControllers', []);	
 
-gnaProgrammedControllers.controller('gnaProgrammedCtrl', function ($scope, $interval){
+gnaUIlogicControllers.controller('gnaUIlogicCtrl', function ($scope, $interval){
     function generateRandomNumber (){return Math.floor((Math.random() * 10) + 1)}
     $scope.randomNumber;
     $scope.generateRandomNumber = function() {  

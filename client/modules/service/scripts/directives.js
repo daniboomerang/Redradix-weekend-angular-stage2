@@ -6,7 +6,7 @@ gnaWithServiceDirectives.directive('gnaDirectiveModuleService', function($interv
     restrict: 'E',
     scope: {},
     template:  ' <div id="gna-container" class="container"> ' +
-               '   <h3> GNA con servicio de Dani con MOD {{mod}} e intervalo de tiempo {{interval}} ms</h3> ' +
+               '   <h3> GNA con servicio MOD {{mod}} e intervalo de tiempo {{interval}} ms</h3> ' +
                '   <button type="submit" class="btn btn-default" ng-click="generateRandomNumber()">Generar Numero Aleatorio</button> ' +
                '   <div id="display"> ' +
                '     <div id="random-number"> ' +
