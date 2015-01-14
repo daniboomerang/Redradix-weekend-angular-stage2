@@ -1,7 +1,7 @@
-/* Our App is an Angular Module */
+/* A Module for directives */
 var gnaAsDirectiveDirecives = angular.module('gnaAsDirectiveDirecives', []);  
 
-/* Creating a new directive for aur app */  
+/* Creating a new directive */  
 gnaAsDirectiveDirecives.directive('gnaDirectiveModuleDirective', function($interval) {
   return {
     restrict: 'E',

@@ -1,6 +1,7 @@
+/* A module for directives */  
 var gnaWithServiceDirectives = angular.module('gnaWithServiceDirectives', ['gnaWithServiceServices']);  
 
-/* Creating a new directive for aur app */  
+/* Creating a new directive */  
 gnaWithServiceDirectives.directive('gnaDirectiveModuleService', function($interval, gnaService) {
   return {
     restrict: 'E',
