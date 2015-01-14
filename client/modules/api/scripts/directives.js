@@ -7,7 +7,7 @@ gnaApiDirectives.directive('gnaApi', function($interval, gnaApiService) {
     restrict: 'E',
     scope: {},
     template: ' <div id="gna-container" class="container"> ' + 
-              ' <h3> GNA Programado con MOD {{mod}} e intervalo de tiempo {{interval}} ms</h3> ' +
+              ' <h3> GNA Servicio API Externo con MOD {{mod}} e intervalo de tiempo {{interval}} ms</h3> ' +
               '  <button type="submit" class="btn btn-info" ng-click="generateRandomNumber()">Generar Numero Aleatorio</button> ' +
               '  <div id="display"> ' +
               '   <div id="random-number"> ' +
@@ -16,14 +16,11 @@ gnaApiDirectives.directive('gnaApi', function($interval, gnaApiService) {
               '  </div> ' +
               ' </div> ',
     link: function (scope, element, attrs) {
-      scope.$on(gnaApiService.subscriptionEvent(), function($event, randomNumber){ scope.randomNumber = randomNumber;});
+      scope.$on(gnaApiService.subscriptionEvent(), function($event, randomNumber){scope.randomNumber = randomNumber;});
       scope.mod = attrs.mod;
       scope.interval = attrs.interval;
       scope.generateRandomNumber = function() {
-        var stop;
-        // Don't start a new geeration if we are already running GNA
-        if ( angular.isDefined(stop) ) return;
-        stop = $interval(function() {
+        $interval(function() {
           gnaApiService.startService(attrs.mod);
         }, scope.interval);
       };      

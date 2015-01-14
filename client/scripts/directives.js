@@ -30,18 +30,16 @@ gnasDirectives.directive('topnavbar', function($timeout, $location, $rootScope, 
         $rootScope.$on("$routeChangeSuccess", function (event, current, previous, rejection) {
 
           function getModuleFromRoute(route) {
-            if (typeof(route) == 'undefined' || route == null) {return route;}
-            else {
               var location = route.$$route.originalPath;
               if (location == scope.modules[MANUAL].URLLink) return scope.modules[MANUAL];
               if (location == scope.modules[PROGRAMMED].URLLink) return scope.modules[PROGRAMMED];
               if (location == scope.modules[DIRECTIVE].URLLink) return scope.modules[DIRECTIVE];
               if (location == scope.modules[SERVICE].URLLink) return scope.modules[SERVICE];
               if (location == scope.modules[API].URLLink) return scope.modules[API];
-            }
           }
-
-          previousActiveModule = getModuleFromRoute(previous);
+          if (typeof(previousActiveModule) != 'undefined' || previousActiveModule != null) {
+            previousActiveModule = getModuleFromRoute(previous);
+          }
           currentActiveModule = getModuleFromRoute(current);
           
           if (typeof(previousActiveModule) != 'undefined' || previousActiveModule != null){

@@ -2,11 +2,15 @@
 /* GNAs ContainerAPP */
 /*********************/
 
-.special,.special .jumbotron {height:100%;}
 
-/* Space out content a bit */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  padding-top: 5px;
+  padding-top: 1%;
+  padding-bottom: 15%;
   /*background-color: rgba(11, 27, 55, 0.8); */
 }
 

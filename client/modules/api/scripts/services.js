@@ -4,7 +4,7 @@ var gnaApiServices = angular.module('gnaApiServices', []);
 /* Creating a new service */
 gnaApiServices.factory('gnaApiService', function($rootScope, $http) {
 
-  var SUBSCRIPTION = "event:newRandomNumber";
+  var SUBSCRIPTION = "event:newRandomNumberApiModule";
 
   return {
     subscriptionEvent: function () {

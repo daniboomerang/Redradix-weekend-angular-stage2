@@ -7,7 +7,10 @@ angular.module('gnasApp', [
 	// GNAs Container
 	'gnasDirectives',
 	// GNAs Modules
-	'gnaApiModule' // Rest Module
+	'gnaProgrammed', 	// Programmed Module
+	'gnaAsDirective',	// As Directive Module
+	'gnaWithService',		// Service Module
+	'gnaApi'         	// Api Module
 ])
 .config(function($locationProvider, $routeProvider) {
 	$routeProvider
@@ -18,17 +21,17 @@ angular.module('gnasApp', [
             // route for Module GNA Programmed
             .when('/programmed', { templateUrl : 'modules/programmed/views/programmed.html'})
 
-            // route for Module GNA Programmed
+            // route for Module GNA Directive
             .when('/directive', { templateUrl : 'modules/directive/views/directive.html'})
 
-			// route for Module GNA Programmed
+			// route for Module GNA Service
             .when('/service', { templateUrl : 'modules/service/views/service.html'})
 
-            // route for Module GNA Api External
+            // route for Module GNA External Api
             .when('/api', { templateUrl : 'modules/api/views/external-api.html'})
 
             // Otherwise -> go to Module GNA Manual
-            .otherwise({templateUrl : 'modules/manual/views/manual.html'});
+            .otherwise({redirectTo: '/manual'});
 
     $locationProvider.html5Mode({
 	  enabled: true,
