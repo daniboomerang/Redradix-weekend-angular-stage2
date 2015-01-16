@@ -8,7 +8,7 @@
     </div>
     <div>
       <ul class="nav navbar-nav pull-right nav-custom-width">
-        <li class='{{ module.animation }} fx-easing-bounce fx-speed-800' ng-repeat="module in modules">
+        <li ng-repeat="module in modules">
             <a id="{{ module.idLink }}" href="{{module.URLLink}}" ng-click="goToModule(module)" class="faa-parent animated-hover">
               <span id="{{ module.idIcon}}" class="icon-stack">
                 <i class= "icon-sign-blank icon-stack-base"></i>

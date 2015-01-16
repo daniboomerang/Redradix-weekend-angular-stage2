@@ -2,8 +2,6 @@
 
 angular.module('gnasApp', [
 	'ngRoute',
-	// Vendor
-	'ngFx',
 	// GNAs Container
 	'gnasDirectives',
 	// GNAs Modules

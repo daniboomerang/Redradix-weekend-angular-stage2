@@ -20,11 +20,11 @@ gnasDirectives.directive('topnavbar', function($timeout, $location, $rootScope, 
         var currentModuleElementId;
         
         scope.modules = [
-          {idLink: 'module-one-idLink', idText:'module-one-text', idIcon: "module-one-idIcon", URLLink: '/manual' ,text:'Manual', number:'1', animation:'fx-zoom-left'},
-          {idLink: 'module-two-idLink', idText:'module-two-text', idIcon: "module-two-idIcon", URLLink: '/uilogic' ,text:'UIlogic', number:'2', animation:'fx-zoom-left'},
-          {idLink: 'module-three-idLink', idText:'module-three-text', idIcon: "module-three-idIcon", URLLink: '/directive' ,text:'Directive', number:'3', animation:'fx-zoom-right'},
-          {idLink: 'module-four-idLink', idText:'module-four-text', idIcon: "module-four-idIcon", URLLink: '/service' ,text:'Service', number:'4', animation:'fx-zoom-right'},
-          {idLink: 'module-five-idLink', idText:'module-five-text', idIcon: "module-five-idIcon", URLLink: '/api' ,text:'Ext API', number:'5', animation:'fx-zoom-right'}
+          {idLink: 'module-one-idLink', idText:'module-one-text', idIcon: "module-one-idIcon", URLLink: '/manual' ,text:'Manual', number:'1' },
+          {idLink: 'module-two-idLink', idText:'module-two-text', idIcon: "module-two-idIcon", URLLink: '/uilogic' ,text:'UIlogic', number:'2' },
+          {idLink: 'module-three-idLink', idText:'module-three-text', idIcon: "module-three-idIcon", URLLink: '/directive' ,text:'Directive', number:'3' },
+          {idLink: 'module-four-idLink', idText:'module-four-text', idIcon: "module-four-idIcon", URLLink: '/service' ,text:'Service', number:'4' },
+          {idLink: 'module-five-idLink', idText:'module-five-text', idIcon: "module-five-idIcon", URLLink: '/api' ,text:'Ext API', number:'5' }
         ];
 
         $rootScope.$on("$routeChangeSuccess", function (event, current, previous, rejection) {
